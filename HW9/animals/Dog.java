@@ -3,7 +3,7 @@ package animals;
 import java.util.Set;
 
 public class Dog extends Pet implements Foulable {
-    Animal animalType = Animal.DOG;
+    private Animal animalType = Animal.DOG;
 
     public Dog(String nickname) {
         super(nickname);
@@ -13,14 +13,24 @@ public class Dog extends Pet implements Foulable {
         super(nickname, age, trickLevel, habits);
     }
 
-    public Dog() {
-    }
+    public Dog() {}
 
     @Override
     public String toString() {
         return "Dog{" +
                 "animalType=" + animalType +
+                " nickName=" + this.getNickname() +
                 '}';
+    }
+
+    @Override
+    public void setAnimalType(Animal animalType){
+        this.animalType = animalType;
+    }
+
+    @Override
+    public Animal getAnimalType() {
+        return this.animalType;
     }
 
     @Override

@@ -56,7 +56,10 @@ public abstract class Pet {
 
     @Override
     public String toString() {
-        return this.animalType.getType() + "{nickname='" + this.nickname + "' age=" + this.age + " trickLevel=" + this.trickLevel + " habits=" + this.habits + "}";
+        return "Pet{" +
+                "animalType=" + animalType +
+                ", nickname='" + nickname + '\'' +
+                '}';
     }
 
     @Override

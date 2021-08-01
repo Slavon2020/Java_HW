@@ -93,7 +93,7 @@ class FamilyTest {
         Human mother1 = new Human("Jenifer", "Henks", 1975, 90,  null, null, mothersScedule);
         Human father1 = new Human("Bob", "Henks", 1973, 90, null, null, fathersScedule);
         Family family1 = new Family(father1, mother1);
-        String expected = "Human{name=Bob, surname='Henks', year=1973, iq=90, schedule=[[WEDNESDAY, meet with friends] [MONDAY, read book] [TUESDAY, go to gym] ]} Human{name=Jenifer, surname='Henks', year=1975, iq=90, schedule=[[Monday, prepare supper] [Wednesday, read book] [Tuesday, visit cosmetologist] ]} null []";
+        String expected = "Human{name=Bob, surname='Henks', birthdayString=01/01/1970, iq=90, schedule=[[WEDNESDAY, meet with friends] [MONDAY, read book] [TUESDAY, go to gym] ]} Human{name=Jenifer, surname='Henks', birthdayString=01/01/1970, iq=90, schedule=[[Monday, prepare supper] [Wednesday, read book] [Tuesday, visit cosmetologist] ]} [] []";
         assertEquals(expected, family1.toString());
     }
 }
