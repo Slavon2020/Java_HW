@@ -1,6 +1,7 @@
 import animals.Pet;
 
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -85,7 +86,7 @@ public class FamilyService {
         return familyDao.getFamilyByIndex(id);
     }
 
-    Set<Pet> getPets(int familyId) {
+    HashSet<Pet> getPets(int familyId) {
         return familyDao.getFamilyByIndex(familyId).getPets();
     }
 

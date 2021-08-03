@@ -7,7 +7,7 @@ public class Family {
     final private Human MOTHER;
 
     private List<Human> childs = new ArrayList<>();
-    private Set<Pet> pets;
+    private HashSet<Pet> pets;
 
     Family(Human father, Human mother) {
         this.FATHER = father;
@@ -29,10 +29,10 @@ public class Family {
     public void setChilds(List<Human> childs) {
         this.childs = childs;
     }
-    public Set<Pet> getPets() {
+    public HashSet<Pet> getPets() {
         return pets;
     }
-    public void setPets(Set<Pet> pets) {
+    public void setPets(HashSet<Pet> pets) {
         this.pets = pets;
     }
 
