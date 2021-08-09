@@ -116,7 +116,7 @@ class FamilyServiceTest {
         familyService.addPet(0, new Dog("Rex"));
         HashSet<Dog> expected = new HashSet<>();
         expected.add(new Dog("Rex"));
-        HashSet<Pet> actual = familyService.getPets(0);
+        HashSet<Pet> actual = (HashSet<Pet>)familyService.getPets(0);
         assertArrayEquals(expected.toArray(), actual.toArray());
     }
 }
